@@ -34,7 +34,7 @@ import (
 )
 
 func main() {
-    axios.Get("https://www.bing.com").Then(func(v interface{}) (interface{}, error) {
+	axios.Get("https://www.bing.com").Then(func(v interface{}) (interface{}, error) {
 		resp := v.(*http.Response)
 		fmt.Println(resp.Status)
 		return nil, nil
